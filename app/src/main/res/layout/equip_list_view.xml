@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="40dp"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="5dp"
+        android:id="@+id/CardViewEquipment"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgsEquip"
+                android:padding="10dp">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/imgDeleteEquip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ic_delete_member"
+                    />
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/imgUpdateEquip"
+                    android:layout_below="@+id/imgDeleteEquip"
+                    android:src="@drawable/ic_update_member"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Update"
+                    android:textSize="12sp"
+                    android:layout_below="@+id/imgUpdateEquip"
+                    android:id="@+id/txtForUpdate"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/mainDetailsEquip"
+                android:layout_toEndOf="@+id/imgsEquip"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name :"
+                    android:textSize="18sp"
+                    android:id="@+id/TXTNAMEE"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textSize="16sp"
+                    android:layout_toEndOf="@+id/guideLine2x"
+                    android:layout_marginStart="5dp"
+                    android:id="@+id/txtNameEquip"
+                    android:layout_alignBaseline="@+id/TXTNAMEE"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No. of Units :"
+                    android:id="@+id/TXTEMAILE"
+                    android:textSize="18sp"
+                    android:layout_below="@+id/txtNameEquip"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Unit"
+                    android:textSize="16sp"
+                    android:layout_toEndOf="@+id/guideLine2x"
+                    android:layout_marginStart="5dp"
+                    android:id="@+id/txtUnitEquip"
+                    android:layout_alignBaseline="@+id/TXTEMAILE"
+                    />
+                <androidx.constraintlayout.widget.Guideline
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/TXTEMAILE"
+                    android:id="@+id/guideLine2x"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_expand"
+                    android:layout_below="@+id/txtUnitEquip"
+                    android:id="@+id/imgexpandequip"
+                    android:layout_alignParentEnd="true"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_compress"
+                    android:layout_below="@+id/txtUnitEquip"
+                    android:id="@+id/imgcompressequip"
+                    android:visibility="gone"
+                    android:layout_alignParentEnd="true"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:id="@+id/expandedDetailsEquip"
+                android:layout_below="@+id/mainDetailsEquip"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Location"
+                    android:id="@+id/txtMessageEquip"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Available in :"
+                    android:id="@+id/TXTPHONEE"
+                    android:textSize="18sp"
+                    android:layout_below="@+id/txtMessageEquip"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="location"
+                    android:textSize="16sp"
+                    android:layout_toEndOf="@+id/guideLine2xa"
+                    android:id="@+id/txtLocationEquip"
+                    android:layout_marginStart="5dp"
+                    android:layout_alignBaseline="@+id/TXTPHONEE"
+                    />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/TXTPHONEE"
+                    android:id="@+id/guideLine2xa"
+                    />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>

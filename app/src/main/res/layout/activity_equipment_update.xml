@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EquipmentUpdateActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edtEquipUnitUpdated"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:ems="10"
+            android:hint="No. of Units"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.275" />
+
+        <EditText
+            android:id="@+id/edtLocationEquipUpdated"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_32sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Available in Hall..."
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="@+id/edtEquipUnitUpdated"
+            app:layout_constraintStart_toStartOf="@+id/edtEquipUnitUpdated"
+            app:layout_constraintTop_toBottomOf="@+id/edtEquipUnitUpdated" />
+
+        <Button
+            android:id="@+id/btnEquipUpdated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_32sdp"
+            android:text="Update Details"
+            android:textAllCaps="false"
+            app:backgroundTint="#8BC34A"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/edtLocationEquipUpdated"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="@+id/edtLocationEquipUpdated"
+            app:layout_constraintTop_toBottomOf="@+id/edtLocationEquipUpdated"
+            app:layout_constraintVertical_bias="0.144" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:text="No of units"
+            app:layout_constraintBottom_toTopOf="@+id/edtEquipUnitUpdated"
+            app:layout_constraintStart_toStartOf="@+id/edtEquipUnitUpdated"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:text="Location"
+            app:layout_constraintBottom_toTopOf="@+id/edtLocationEquipUpdated"
+            app:layout_constraintStart_toStartOf="@+id/edtLocationEquipUpdated"
+            app:layout_constraintTop_toBottomOf="@+id/edtEquipUnitUpdated"
+            app:layout_constraintVertical_bias="1.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

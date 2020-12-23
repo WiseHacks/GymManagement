@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrainerFormActivity">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/edtEnterTrainerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:ems="10"
+        android:hint="Enter the Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.322" />
+
+    <EditText
+        android:id="@+id/edtEnterTrainerEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:ems="10"
+        android:hint="Enter the Email"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtEnterTrainerName"
+        app:layout_constraintStart_toStartOf="@+id/edtEnterTrainerName"
+        app:layout_constraintTop_toBottomOf="@+id/edtEnterTrainerName" />
+
+    <EditText
+        android:id="@+id/edtEnterTrainerPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:ems="10"
+        android:hint="Enter the Phone number"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/edtEnterTrainerEmail"
+        app:layout_constraintStart_toStartOf="@+id/edtEnterTrainerEmail"
+        app:layout_constraintTop_toBottomOf="@+id/edtEnterTrainerEmail" />
+
+    <Button
+        android:id="@+id/btnTrainerAdded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:backgroundTint="#2196F3"
+        android:text="Add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtAssignedHr"
+        app:layout_constraintVertical_bias="0.277" />
+
+    <EditText
+        android:id="@+id/edtAssignedHr"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:ems="10"
+        android:hint="Time"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/edtEnterTrainerPhone"
+        app:layout_constraintTop_toBottomOf="@+id/edtEnterTrainerPhone" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_32sdp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/edtAssignedHr"
+        app:layout_constraintStart_toEndOf="@+id/edtAssignedHr"
+        app:layout_constraintTop_toTopOf="@+id/edtAssignedHr">
+
+        <RadioButton
+            android:id="@+id/btnAM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="AM" />
+
+        <RadioButton
+            android:id="@+id/btnPM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PM" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnTrainerAddedAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add again"
+        app:backgroundTint="#2196F3"
+        app:layout_constraintBottom_toBottomOf="@+id/btnTrainerAdded"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toTopOf="@+id/btnTrainerAdded" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtEnterTrainerPhone" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MemberUpdateActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            app:layout_constraintBottom_toTopOf="@+id/txtMemberupdateCD"
+            app:layout_constraintStart_toStartOf="@+id/txtMemberupdateCD" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone no."
+            app:layout_constraintBottom_toTopOf="@+id/edtEnterPhone2"
+            app:layout_constraintStart_toStartOf="@+id/edtEnterPhone2" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            app:layout_constraintBottom_toTopOf="@+id/edtEnterEmail2"
+            app:layout_constraintStart_toStartOf="@+id/edtEnterEmail2" />
+
+        <EditText
+            android:id="@+id/edtEnterAge2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:ems="10"
+            android:hint="Enter the Age"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.223" />
+
+        <EditText
+            android:id="@+id/edtEnterEmail2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_32sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:ems="10"
+            android:hint="Enter the Email"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/edtEnterAge2"
+            app:layout_constraintStart_toStartOf="@+id/edtEnterAge2"
+            app:layout_constraintTop_toBottomOf="@+id/edtEnterAge2" />
+
+        <EditText
+            android:id="@+id/edtEnterPhone2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_32sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:ems="10"
+            android:hint="Enter the Phone Number"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/edtEnterEmail2"
+            app:layout_constraintStart_toStartOf="@+id/edtEnterEmail2"
+            app:layout_constraintTop_toBottomOf="@+id/edtEnterEmail2" />
+
+        <Button
+            android:id="@+id/btnMemberUpdated2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_32sdp"
+            android:text="Update Details"
+            android:textAllCaps="false"
+            app:backgroundTint="#8BC34A"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerup"
+            app:layout_constraintVertical_bias="0.201" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age"
+            app:layout_constraintBottom_toTopOf="@+id/edtEnterAge2"
+            app:layout_constraintStart_toStartOf="@+id/edtEnterAge2" />
+
+        <TextView
+            android:id="@+id/txtMemberupdateCD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_32sdp"
+            android:text="txtMemberCD"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/edtEnterPhone2"
+            app:layout_constraintTop_toBottomOf="@+id/edtEnterPhone2" />
+
+        <Button
+            android:id="@+id/btnSetToday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_32sdp"
+            android:text="Set\ntoday"
+            android:textAllCaps="false"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/txtMemberupdateCD"
+            app:layout_constraintStart_toEndOf="@+id/txtMemberupdateCD"
+            app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_32sdp"
+            android:text="Chosen Plan -"
+            app:layout_constraintStart_toStartOf="@+id/txtMemberupdateCD"
+            app:layout_constraintTop_toBottomOf="@+id/btnSetToday" />
+
+        <Spinner
+            android:id="@+id/spinnerup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_marginTop="@dimen/_16sdp"
+            app:layout_constraintStart_toStartOf="@+id/textView18"
+            app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+        <TextView
+            android:id="@+id/txtChoosenPlanup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ChoosePlan"
+            android:textColor="#070707"
+            app:layout_constraintStart_toStartOf="@+id/textView16"
+            app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+        <Button
+            android:id="@+id/btnChangePlan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change"
+            android:textAllCaps="false"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/txtChoosenPlanup"
+            app:layout_constraintEnd_toEndOf="@+id/btnSetToday"
+            app:layout_constraintTop_toTopOf="@+id/textView16" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="Select -"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="@+id/btnChangePlan"
+            app:layout_constraintTop_toBottomOf="@+id/btnChangePlan" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

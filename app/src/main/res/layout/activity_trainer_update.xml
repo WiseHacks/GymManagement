@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrainerUpdateActivity">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        app:layout_constraintBottom_toTopOf="@+id/edtEnterEmailTrainer2"
+        app:layout_constraintStart_toStartOf="@+id/edtEnterEmailTrainer2" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone no."
+        app:layout_constraintBottom_toTopOf="@+id/edtenterPhoneTrainer2"
+        app:layout_constraintStart_toStartOf="@+id/edtenterPhoneTrainer2" />
+
+    <EditText
+        android:id="@+id/edtEnterEmailTrainer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:ems="10"
+        android:hint="Enter the Email"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.306" />
+
+    <EditText
+        android:id="@+id/edtenterPhoneTrainer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:ems="10"
+        android:hint="Enter the Phone number"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/edtEnterEmailTrainer2"
+        app:layout_constraintStart_toStartOf="@+id/edtEnterEmailTrainer2"
+        app:layout_constraintTop_toBottomOf="@+id/edtEnterEmailTrainer2" />
+
+    <Button
+        android:id="@+id/btnTrainerUpdated2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:backgroundTint="#8BC34A"
+        android:text="Update Details"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edtenterPhoneTrainer2"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/edtenterPhoneTrainer2"
+        app:layout_constraintTop_toBottomOf="@+id/edtStartinghour"
+        app:layout_constraintVertical_bias="0.16000003" />
+
+    <EditText
+        android:id="@+id/edtStartinghour"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:ems="10"
+        android:hint="Time"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/edtenterPhoneTrainer2"
+        app:layout_constraintTop_toBottomOf="@+id/edtenterPhoneTrainer2" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start from"
+        app:layout_constraintBottom_toTopOf="@+id/edtStartinghour"
+        app:layout_constraintStart_toStartOf="@+id/edtStartinghour" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupTimeup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_32sdp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/edtStartinghour"
+        app:layout_constraintStart_toEndOf="@+id/edtStartinghour"
+        app:layout_constraintTop_toTopOf="@+id/edtStartinghour">
+
+        <RadioButton
+            android:id="@+id/btnAMup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="AM" />
+
+        <RadioButton
+            android:id="@+id/btnPMup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PM" />
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

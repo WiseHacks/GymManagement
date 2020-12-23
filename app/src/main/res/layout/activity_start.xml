@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartActivity"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/interiora"
+        android:visibility="visible"
+        android:scaleType="centerCrop"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/startViewid">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="."
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                >
+
+                <TableLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        >
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnMemberDetails"
+                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                            android:layout_width="@dimen/_120sdp"
+                            android:layout_height="@dimen/_120sdp"
+
+                            android:backgroundTint="#66DCFFAA"
+                            android:fontFamily="@font/playfair_display_black"
+                            android:text="Member\nDetails"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_13sdp"
+                            app:cornerRadius="@dimen/_10sdp"
+                            app:strokeColor="@color/design_default_color_primary" />
+
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnTrainerDetails"
+                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                            android:layout_width="@dimen/_120sdp"
+                            android:layout_height="@dimen/_120sdp"
+                            android:backgroundTint="#66EAC3FF"
+                            android:fontFamily="@font/playfair_display_black"
+                            android:text="Trainer\nDetails"
+                            android:layout_marginLeft="@dimen/_32sdp"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_13sdp"
+                            app:cornerRadius="@dimen/_10sdp"
+                            app:strokeColor="@color/design_default_color_primary" />
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="wrap_content"
+                    >
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnAvailableTrainers"
+                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                            android:layout_width="@dimen/_120sdp"
+                            android:layout_height="@dimen/_120sdp"
+
+                            android:backgroundTint="#66FFF0AA"
+
+                            android:fontFamily="@font/playfair_display_black"
+                            android:text="Available\nTrainers"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_13sdp"
+                            app:cornerRadius="@dimen/_10sdp"
+                            app:strokeColor="@color/design_default_color_primary" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnGymHallDetails"
+                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                            android:layout_width="@dimen/_120sdp"
+                            android:layout_height="@dimen/_120sdp"
+                            android:layout_marginStart="@dimen/_32sdp"
+                            android:backgroundTint="#66AAD3FF"
+                            android:fontFamily="@font/playfair_display_black"
+                            android:text="Gym\nHalls"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_13sdp"
+                            app:cornerRadius="@dimen/_10sdp"
+                            app:strokeColor="@color/design_default_color_primary" />
+
+                    </TableRow>
+                    <TableRow >
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnEquipments"
+                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                            android:layout_width="@dimen/_120sdp"
+                            android:layout_height="@dimen/_120sdp"
+                            android:backgroundTint="#66FABCBC"
+
+                            android:fontFamily="@font/playfair_display_black"
+                            android:text="Equipments"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_13sdp"
+                            app:cornerRadius="@dimen/_10sdp"
+                            app:strokeColor="@color/design_default_color_primary" />
+
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnExercisePlan"
+                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                            android:layout_width="@dimen/_120sdp"
+                            android:layout_height="@dimen/_120sdp"
+                            android:backgroundTint="#4FCDFFBF"
+                            android:fontFamily="@font/playfair_display_black"
+                            android:layout_marginStart="@dimen/_32sdp"
+                            android:text="Plans"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_13sdp"
+                            app:cornerRadius="@dimen/_10sdp"
+                            app:strokeColor="@color/design_default_color_primary" />
+
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_marginTop="@dimen/_5sdp">
+
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnFeedback"
+                            style="@style/Widget.MaterialComponents.Button.TextButton"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:backgroundTint="#8FFFFFFF"
+                            android:text="Feedback"
+                            android:textAllCaps="false"
+
+                            android:textColor="#0126F3"
+                            android:layout_marginTop="@dimen/_50sdp"
+                            android:textSize="@dimen/_13sdp"
+                            app:cornerRadius="@dimen/_200sdp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@+id/btnEquipments"
+                            app:layout_constraintStart_toStartOf="@+id/btnEquipments"
+                            app:layout_constraintTop_toBottomOf="@+id/btnEquipments" />
+
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnAbout"
+                            style="@style/Widget.MaterialComponents.Button.TextButton"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:backgroundTint="#8FFFFFFF"
+                            android:text="About"
+                            android:textAllCaps="false"
+                            android:textColor="#0126F3"
+                            android:textSize="@dimen/_13sdp"
+                            android:layout_marginTop="@dimen/_50sdp"
+                            app:cornerRadius="@dimen/_200sdp"
+                            android:layout_marginLeft="@dimen/_32sdp"
+                            app:layout_constraintBottom_toBottomOf="@+id/btnFeedback"
+
+                            app:layout_constraintEnd_toEndOf="@+id/btnExercisePlan"
+                            app:layout_constraintStart_toStartOf="@+id/btnExercisePlan"
+                            app:layout_constraintTop_toTopOf="@+id/btnFeedback" />
+
+
+                    </TableRow>
+                </TableLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

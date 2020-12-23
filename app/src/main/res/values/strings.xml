@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Gym Management</string>
+    <string name="dbtext">\" TEXT, \"</string>
+    <string name="dbTEXT">\" TEXT, \"</string>
+    <string name="GREETING"> This Application helps us to manage various factors in a Gym and helps to stay updated with all the Information.</string>
+    <string name="Feedback_sub">Feedback for Gym-Management Application</string>
+    <string name="Feedback">Any kind of Feedback -></string>
+</resources>

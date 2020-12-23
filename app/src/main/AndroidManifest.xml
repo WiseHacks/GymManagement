@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.testingproject">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TestingProject">
+        <activity android:name=".WelcomeActivity"
+            android:label="Welcome"/>
+        <activity android:name=".EquipmentUpdateActivity"
+            android:label="Update Equipment"/>
+        <activity android:name=".EquipmentFormActivity"
+            android:label="Equipment Form"/>
+        <activity android:name=".EquipmentDetailsActivity"
+            android:label="Equipment Details"/>
+        <activity android:name=".PlanUpdateActivity"
+            android:label="Update Plan"/>
+        <activity android:name=".PlanFormActivity"
+            android:label="Plan Form"/>
+        <activity android:name=".PlanDetailsActivity"
+            android:label="Plan Details"/>
+        <activity android:name=".TrainerAvailActivity"
+            android:label="Available Trainers"/>
+        <activity android:name=".WebsiteActivity"
+            android:label="Web"/>
+        <activity android:name=".HallFormActivity"
+            android:label="Hall Form"/>
+        <activity android:name=".HallDetailsActivity"
+            android:label="Hall Details"/>
+        <activity android:name=".TrainerUpdateActivity"
+            android:label="Update Trainer"/>
+        <activity android:name=".TrainerFormActivity"
+            android:label="Trainer Form"/>
+        <activity android:name=".TrainerDetailsActivity"
+            android:label="Trainer Details"/>
+        <activity android:name=".MemberUpdateActivity"
+            android:label="Update Member"/>
+        <activity android:name=".MemberFormActivity"
+            android:label="Member Form"/>
+        <activity android:name=".MemberDetailsActivity"
+            android:label="Member Details"/>
+        <activity android:name=".AddGymActivity"
+            android:label="Gym Info"/>
+        <activity android:name=".StartActivity"
+            android:label="Gym Management"/>
+        <activity android:name=".MainActivity"
+            android:label="Gym Info">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

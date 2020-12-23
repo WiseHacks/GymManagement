@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlanUpdateActivity">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/edtUpdatePlanEquip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:ems="10"
+        android:hint="Equipments (NA,Name)"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.374" />
+
+    <EditText
+        android:id="@+id/edtUpdatePlanDesc"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Description"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="@+id/edtUpdatePlanEquip"
+        app:layout_constraintStart_toStartOf="@+id/edtUpdatePlanEquip"
+        app:layout_constraintTop_toBottomOf="@+id/edtUpdatePlanEquip" />
+
+    <Button
+        android:id="@+id/btnUpdatePlan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:backgroundTint="#8BC34A"
+        android:text="Update Details"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edtUpdatePlanDesc"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/edtUpdatePlanDesc"
+        app:layout_constraintTop_toBottomOf="@+id/edtUpdatePlanDesc"
+        app:layout_constraintVertical_bias="0.143" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:text="Equipments"
+        app:layout_constraintBottom_toTopOf="@+id/edtUpdatePlanEquip"
+        app:layout_constraintStart_toStartOf="@+id/edtUpdatePlanEquip" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:text="Description"
+        app:layout_constraintBottom_toTopOf="@+id/edtUpdatePlanDesc"
+        app:layout_constraintStart_toStartOf="@+id/edtUpdatePlanDesc"
+        app:layout_constraintTop_toBottomOf="@+id/edtUpdatePlanEquip" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
