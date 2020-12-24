@@ -6,6 +6,7 @@ This is my very first android application which i made to learn more about andro
 This is an android application to help a gym manager manage a GYM hall, with various equipment,Trainers/customers, equipment’s, and exercise plan, and simple scheduling of the customers Subscriptions.
 # Design
 Basic Classes: Gym halls, equipments, trainers, exercise plans and customers:
+
     • The Gym hall aggregates several equipments.
     • Each hall opens 12 hours a day.
     • Each trainer works 8 hours a day in one hall.
@@ -19,3 +20,6 @@ Basic Classes: Gym halls, equipments, trainers, exercise plans and customers:
    4. Enquire about customers subscriptions, halls schedule, and trainers schedule.
    It also has a feature to contact Member or Trainer whenever needed...
    
+# App Link
+
+https://bit.ly/34CfSAL
